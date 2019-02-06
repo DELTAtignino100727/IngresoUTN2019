@@ -2,10 +2,10 @@
 y luego mostrarlo por 'alert' al presionar el botón  'MOSTRAR'*/
 function Mostrar()
 {
-	var nombre;    
+	var nombre;
 
-   nombre =  prompt("Ingrese su nombre");
+	nombre = prompt("Ingrese nombre");
 
-    alert(nombre);
+	document.getElementById('texto').innerHTML = nombre;
 }
 

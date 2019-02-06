@@ -1,8 +1,10 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
 function Mostrar()
 {
-	alert("Esto funciona de maravilla");
-
-   
+	document.getElementById("label").style.visibility='visible';
 }
 
+function Ocultar()
+{
+	document.getElementById("label").style.visibility='hidden';
+}
