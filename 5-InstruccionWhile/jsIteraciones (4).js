@@ -1,7 +1,11 @@
 function Mostrar()
 {
 
-	var numero = prompt("ingrese un número entre 0 y 10.");
-
+	var num;
+	
+	while (num = Math.round(Math.random()*9)) {
+  		document.getElementById("Numero").value = num;
+  		break;
+	}
 
 }//FIN DE LA FUNCIÓN
