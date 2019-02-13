@@ -1,20 +1,21 @@
 function Mostrar()
 {
 
-	var contador = 0;
+	var suma = 0;
 	var acumulador = 0;
+  var valor;
 	var numeros;
 
-	while (numeros <= 5)
+	while (suma <= 5)
   	{
-    	valor = prompt("Ingresar 5 numeros");
-    	valor = parseInt(valor);
-    	contador = contador + valor;
-    	numeros = numeros + 1;
+    	suma = prompt("Ingresar 5 numeros");
+      //valor = valor + 1;
+    	//valor = parseInt(valor);
+    	suma = suma + 1;
+    	numeros = valor / 5;
   	}
-  	alert('La suma de los valores es '+suma+'<br>');
 
-	document.getElementById('suma').value=acumulador;
-	document.getElementById('promedio').value=acumulador/5;
+	document.getElementById("suma").value = suma;
+	document.getElementById("promedio").value = numeros / 5;
 
 }//FIN DE LA FUNCIÓN
