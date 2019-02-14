@@ -6,7 +6,7 @@ function Mostrar()
 	var edad = document.getElementById("edad").value;
 	var op = document.getElementById("estadoCivil").value;
 
-	if (eval(edad) <= 18){
+	if (eval(edad) < 18){
 
 		switch(op)
     	{
@@ -16,7 +16,7 @@ function Mostrar()
       		case "Divorciado":
         		alert("Es muy pequeño para NO ser soltero");
       		break;
-      	}
+      }
 	} 
 
 }//FIN DE LA FUNCIÓN
