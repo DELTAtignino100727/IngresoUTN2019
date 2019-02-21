@@ -1,14 +1,28 @@
 function Mostrar()
 {
+	var suma = 1;
+  	var valor = 0;
+  	var miArray = new Array();
+	var numeros = parseInt(prompt("Ingrese cuantos numero quiere ingresar"));
 
-	var contador=0;
-	var positivo=0;
-	var negativo=1;
-	
-	var respuesta='si';
+	while (suma <= numeros)
+  	{
+  		miArray[suma] = prompt("Ingresar " + numeros + " numeros");
 
+      	if (miArray[suma] < 0) {
+      		
+      		valor = miArray[suma];
+      		suma++
 
-document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
+      	} else{
+
+			valor += miArray[suma];
+      		suma ++;
+
+      	}
+  	}
+
+document.getElementById('suma').value=valor;
+document.getElementById('producto').value=valor;
 
 }//FIN DE LA FUNCIÓN

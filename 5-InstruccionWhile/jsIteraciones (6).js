@@ -1,20 +1,20 @@
 function Mostrar()
 {
 
-	var suma = 0;
+	var suma = 1;
   var miArray = new Array();
   var valor = 0;
 
 	while (suma <= 5)
   	{
 
-      suma ++; 
+      suma ++;
     	miArray[suma] = parseInt(prompt("Ingrese 5 numeros"));
       valor += miArray[suma];
       
   	}
 
 	document.getElementById("suma").value = valor;
-	document.getElementById("promedio").value = valor / 5;
+	document.getElementById("promedio").value = valor / miArray[suma];
 
 }//FIN DE LA FUNCIÓN
